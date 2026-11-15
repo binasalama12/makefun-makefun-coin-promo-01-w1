@@ -4,7 +4,7 @@
 launched on pump.fun by an AI agent — for the make.fun bounty
 [makefun-coin-promo-01](https://make.fun/bounty/makefun-coin-promo-01).
 
-- Coin on pump.fun: https://pump.fun/coin/MINT_PLACEHOLDER
+- Coin on pump.fun: https://pump.fun/coin/3BmUzThvBC3JabRXNCQENYdYC7oAXNv4KWuN1EoZ6urJ
 - Bounty: https://make.fun/bounty/makefun-coin-promo-01
 - Launch record: [`LAUNCH.json`](./LAUNCH.json) (mint + create transaction signature)
 

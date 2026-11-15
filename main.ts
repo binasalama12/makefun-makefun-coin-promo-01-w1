@@ -77,6 +77,15 @@ console.log(`mint:            ${mint}`);
 console.log(`create tx:       ${createSignature}`);
 console.log(`pump.fun:        https://pump.fun/coin/${mint}`);
 console.log(`bounty:          ${BOUNTY_URL}`);
+const deadlineMs = Date.parse('2026-11-17T06:00:00Z');
+const leftMs = deadlineMs - Date.now();
+if (leftMs > 0) {
+  const h = Math.floor(leftMs / 3600000);
+  const m = Math.floor((leftMs % 3600000) / 60000);
+  console.log(`hunt window:     ${h}h ${m}m left before the bounty deadline`);
+} else {
+  console.log('hunt window:     closed (past the bounty deadline)');
+}
 if (coin) {
   const usd = typeof coin.usd_market_cap === 'number' ? coin.usd_market_cap.toFixed(2) : 'n/a';
   console.log(`live name:       ${coin.name} (${coin.symbol})`);
